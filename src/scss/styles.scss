@@ -1,0 +1,81 @@
+@import "./mixins.scss";
+/**
+*VARIABLES
+*/
+$mainFont: "DM Serif Display", serif;
+$secondFont: "Karla", sans-serif;
+
+$darkViolet: #2d2640;
+$grayishBlue: #95a9c6;
+$veryDarkViolet: #2b272f;
+$darkGrayishViolet: #837d87;
+$veryLightGray: #fafafa;
+/**
+*GLOBAL CLASSES
+*/
+.heading {
+  position: relative;
+  padding-top: 5.7rem;
+  font-family: $mainFont;
+  font-size: 72px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  @include resp("s") {
+    padding-top: 0.7rem;
+    font-size: 50px;
+    line-height: 47px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  &__white {
+    color: white;
+    &:before {
+      background: $veryLightGray;
+    }
+  }
+  &__dark-violet {
+    color: $darkViolet;
+    &:before {
+      background-color: $darkGrayishViolet;
+    }
+  }
+  &__heading-line {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 1.55rem;
+      left: 0;
+      width: 9.3rem;
+      height: 1px;
+    }
+  }
+}
+.button {
+  padding: 0.75rem 1.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 1px;
+  font-size: 11px;
+  &__transparent {
+    color: $veryLightGray;
+    border: 1px solid $veryLightGray;
+    background: transparent;
+    &:hover {
+      transition: all 0.3s linear;
+      background-color: $veryLightGray;
+      color: $veryDarkViolet;
+    }
+  }
+  &_dark-violet {
+    color: $veryLightGray;
+    border: 1px solid $veryLightGray;
+    background-color: $darkViolet;
+    &:hover {
+      transition: all 0.3s linear;
+      background-color: $veryLightGray;
+      color: $veryDarkViolet;
+    }
+  }
+  cursor: pointer;
+}

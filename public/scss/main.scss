@@ -1,0 +1,40 @@
+//________________________________________________________________________________IMPORT PARTS____//
+@import "./reset";
+@import "./resp";
+@import "./widths";
+@import "./flex";
+//___________________________________________________________________________________VARIABLES____//
+//___________________________________________________________________________________Container____//
+$container-width: 80%;
+$max-container-width: 1125px;
+//___________________________________________________________________________________Container____//
+//_______________________________________________________________________________________Fonts____//
+$mainFont: "DM Serif Display", serif;
+$secondFont: "Karla", sans-serif;
+$fontSize: 16px;
+//_______________________________________________________________________________________Fonts____//
+//___________________________________________________________________________________VARIABLES____//
+body {
+  font-family: $mainFont;
+  font-size: $fontSize;
+  font-weight: normal;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.container {
+  width: $container-width;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  @include resp("s") {
+    width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
