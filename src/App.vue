@@ -44,7 +44,7 @@
     <!-- MAIN OPEN TAG-->
     <main id="main">
       <!-- BANNER OPEN TAG-->
-      <section class="banner">
+      <div class="banner">
         <div class="container">
           <div class="flex s-dir-crev">
             <div class="wid-50 resp wid-100">
@@ -94,9 +94,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- GRID OPEN TAG-->
-      <section class="grid">
+      <div class="grid">
         <div class="bg-image">
           <img
             v-if="resolution"
@@ -127,10 +127,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- GRID CLOSE TAG-->
       <!-- Additional BLOCK OPEN TAG-->
-      <section class="additional-block">
+      <div class="additional-block">
         <div class="container">
           <div class="wrapper">
             <div class="bg-image">
@@ -157,7 +157,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- Additional BLOCK CLOSE TAG-->
       <!-- BANNER CLOSE TAG-->
     </main>
@@ -178,7 +178,7 @@
           title="bg-image"
         />
       </div>
-      <section class="footer_head">
+      <div class="footer_head">
         <div class="container">
           <div class="flex wrap jc-sb">
             <div class="logo resp s-wid-100">
@@ -196,8 +196,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="footer_bottom">
+      </div>
+      <div class="footer_bottom">
         <div class="container">
           <div class="flex wrap s-dir-col s-ai-center">
             <footerColumn
@@ -208,7 +208,7 @@
             ></footerColumn>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
     <!-- FOOTER CLOSE TAG-->
   </div>
