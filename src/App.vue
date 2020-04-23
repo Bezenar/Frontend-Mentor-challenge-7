@@ -319,6 +319,8 @@ export default {
         padding-top: 0.25rem;
       }
       #nav {
+        padding-right: 0.5rem;
+        padding-top: 0.25rem;
         @include resp("s") {
           position: fixed;
           top: 0;
@@ -349,7 +351,7 @@ export default {
         .image {
           position: absolute;
           top: 6.6rem;
-          left: 1.4rem;
+          left: 1rem;
           z-index: 2;
           width: auto;
           height: auto;
